@@ -212,6 +212,7 @@ public class ComponentMover extends MouseAdapter {
     if(!e.isControlDown()){
       return;
     }
+    e.consume();
     source = e.getComponent();
     int width = source.getSize().width - dragInsets.left - dragInsets.right;
     int height = source.getSize().height - dragInsets.top - dragInsets.bottom;
