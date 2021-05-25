@@ -1,5 +1,9 @@
 # Micro Reader
 
+_try to find the reader in screenshot_
+
+![screenshot](./doc/screenshot.png)
+
 Text Reader with
 
 - No Toolbar Icon
