@@ -275,7 +275,9 @@ public class ComponentResizer extends MouseAdapter {
   @Override
   public void mousePressed(MouseEvent e) {
     //	The mouseMoved event continually updates this variable
-
+    if (!SwingUtilities.isLeftMouseButton(e)){
+      return;
+    }
     if (direction == 0) {
       return;
     }

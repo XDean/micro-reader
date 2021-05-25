@@ -206,6 +206,12 @@ public class ComponentMover extends MouseAdapter {
    */
   @Override
   public void mousePressed(MouseEvent e) {
+    if (!SwingUtilities.isLeftMouseButton(e)){
+      return;
+    }
+    if(!e.isControlDown()){
+      return;
+    }
     source = e.getComponent();
     int width = source.getSize().width - dragInsets.left - dragInsets.right;
     int height = source.getSize().height - dragInsets.top - dragInsets.bottom;
